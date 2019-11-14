@@ -61,6 +61,8 @@ export class JhiLoginModalComponent implements AfterViewInit {
             this.router.url.startsWith('/account/reset/')
           ) {
             this.router.navigate(['']);
+          } else {
+            this.router.navigate(['/task']);
           }
 
           this.eventManager.broadcast({
